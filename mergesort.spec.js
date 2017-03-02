@@ -14,4 +14,7 @@ describe('Merge Sort', function(){
   it('is able to merge two sorted arrays into one sorted array', function(){
     expect( merge([1, 2, 3, 4], [5, 6, 7, 8])).toEqual([1, 2, 3, 4, 5, 6, 7, 8])
   });
+  it('is able to sort an unsorted array', function() {
+      expect( mergeSort([3, 6, 1, 9, 2, 7])).toEqual([1, 2, 3, 6, 7, 9])
+  })
 });
